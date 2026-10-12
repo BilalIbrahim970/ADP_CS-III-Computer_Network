@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 01: Introduction to Computer Networks & Topologies - Networking Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Extra styling for lecture study guide */
+        .article-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .study-guide {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+        }
+        .study-guide h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        .meta-info {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .study-guide h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.0rem;
+            color: var(--text-primary);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 0.75rem;
+        }
+        .study-guide h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+        .study-guide p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        .study-guide ul, .study-guide ol {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .study-guide li {
+            margin-bottom: 0.5rem;
+        }
+        .note-box {
+            background-color: var(--upcoming-bg);
+            border-left: 4px solid #f59e0b;
+            padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+        .note-box p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+        }
+        .roman-urdu {
+            background-color: var(--badge-bg);
+            border: 1px dashed var(--primary-color);
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .roman-urdu h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .roman-urdu p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+        pre {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            padding: 1.25rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .code-comment { color: #8b949e; }
+        .code-keyword { color: #ff7b72; }
+        .code-string { color: #a5d6ff; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        th {
+            background-color: var(--upcoming-bg);
+            color: var(--text-primary);
+        }
+        td {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Networking Portal</span>
+            </div>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="article-container">
+        <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Dashboard</a>
+
+        <div class="study-guide">
+            <h1>Lecture 01: Introduction to Computer Networks & Topologies</h1>
+            <div class="meta-info">
+                <span><i class="fa-solid fa-calendar"></i> Master Study Guide</span>
+                <span><i class="fa-solid fa-clock"></i> 30 min read</span>
+                <span><i class="fa-solid fa-signal"></i> Beginner Level</span>
+            </div>
+
+            <h2>1. Computer Network Kya Hai? (Core Concepts)</h2>
+            <p>Aik Computer Network mukhtalif computing devices (jaise computers, servers, smartphones, printers) ka aapas mein jurha hua woh silsila hai jo data, resources, aur information ko share karne ke liye cables ya wireless waves ke zariye aapas mein communicate karte hain.</p>
+            
+            <div class="roman-urdu">
+                <h4><i class="fa-solid fa-circle-info"></i> Roman Urdu Concept Note</h4>
+                <p>Asan lafzon mein, agar do ya do se zyada computers aapas mein data share karne ke liye connect ho jayein, toh use network kehte hain. Misal ke tor par, ghar ka Wi-Fi router ya internet jis se aapka mobile aur laptop jurha hota hai.</p>
+            </div>
+
+            <h3>Key Components of a Network:</h3>
+            <ul>
+                <li><strong>Sender & Receiver:</strong> Data bhejne wala (Source) aur data receive karne wala (Destination).</li>
+                <li><strong>Medium (Transmission Channel):</strong> Jiske zariye data travel karta hai (e.g., Twisted-pair copper cable, Fiber optics, ya Wi-Fi).</li>
+                <li><strong>Protocols:</strong> Rules ka majmua jo decide karta hai ke data kaise transmit hoga (e.g., TCP/IP, HTTP).</li>
+                <li><strong>Devices:</strong> Switches, Routers, Hubs jo traffic ko manage karte hain.</li>
+            </ul>
+
+            <h2>2. Types of Computer Networks (LAN, WAN, MAN)</h2>
+            <p>Networks ko unke geographical area (raqaqay) ke lihaz se mukhtalif categories mein taqseem kiya jata hai:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Network Type</th>
+                        <th>Full Form / Area</th>
+                        <th>Range / Scope</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>PAN</strong></td>
+                        <td>Personal Area Network</td>
+                        <td>10 meters (Very small)</td>
+                        <td>Bluetooth connection between phone and headphones</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LAN</strong></td>
+                        <td>Local Area Network</td>
+                        <td>Room, Office building, School</td>
+                        <td>Office Ethernet network, Home Wi-Fi</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MAN</strong></td>
+                        <td>Metropolitan Area Network</td>
+                        <td>Entire City / Town</td>
+                        <td>Cable television network in a city</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WAN</strong></td>
+                        <td>Wide Area Network</td>
+                        <td>Countries, Continents, Global</td>
+                        <td>The Internet</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. Network Topologies (Physical & Logical Layout)</h2>
+            <p>Network topology ka matlab hai ke devices ya nodes aik doosre ke sath physical ya logical tor par kaise connect hain. Har topology ke apne faiday aur nuqsanaat hain:</p>
+
+            <ul>
+                <li><strong>Bus Topology:</strong> Sabhi devices aik single central cable (backbone) ke sath jude hote hain. Agar backbone cable kharab ho jaye, toh poora network baith jata hai.</li>
+                <li><strong>Star Topology:</strong> Har device aik central device (Switch ya Hub) ke sath individual cable se jurha hota hai. Aajkal sabse zyada yahi use hoti hai kyunki agar aik cable kharab ho toh baqi network chalta rehta hai.</li>
+                <li><strong>Ring Topology:</strong> Devices aik circular ring ki shakal mein connected hote hain. Data aik hi direction mein travel karta hai.</li>
+                <li><strong>Mesh Topology:</strong> Har device direct doosre tamam devices ke sath connected hota hai. Isme fault tolerance sabse high hoti hai lekin wiring cost bohat zyada hoti hai.</li>
+            </ul>
+
+            <div class="note-box">
+                <p><strong>Important Exam/Interview Tip:</strong> Real-world enterprise environments mein zyadatar <strong>Star</strong> ya <strong>Extended Star Topology</strong> use ki jati hai kyunki iski scalability aur troubleshooting bohat asan hoti hai.</p>
+            </div>
+
+            <h2>4. Circuit Switching vs Packet Switching</h2>
+            <p>Data ko aik jagah se doosri jagah bhejne ke do bunyadi tareeqe hain:</p>
+            <ol>
+                <li><strong>Circuit Switching:</strong> Isme communication se pehle aik dedicated path establish hota hai (jaise purane landline telephones). Jab tak call chalegi, rasta reserved rahega chahe aap bole ya na bolein.</li>
+                <li><strong>Packet Switching:</strong> Isme data ko chhote-chhote tukron ("Packets") mein baant diya jata hai. Har packet independent raste se destination tak pahunchta hai aur wahan reassemble ho jata hai. Internet poora ka poora packet switching par kaam karta hai.</li>
+            </ol>
+
+            <pre><code><span class="code-comment"># Conceptual illustration of Data Packets routing</span>
+<span class="code-keyword">Source Device</span> ---> [Packet 1] [Packet 2] [Packet 3] ---> <span class="code-keyword">Internet Router</span> ---> <span class="code-keyword">Destination</span></code></pre>
+
+            <h2>5. Summary & Conclusion</h2>
+            <p>Is lecture mein humne networking ke bunyadi concepts, LAN/WAN/MAN ka farq, aur mukhtalif network topologies ko detail se samjha. Agle lecture mein hum **OSI & TCP/IP Reference Models** ki taraf barhenge aur dekhenge ke network layers kaise aapas mein mil kar data transmission ko mumkin banati hain.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Networking & Computer Networks Learning Portal. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <script>
+        // Simple Theme Toggle for Lecture page
+        const themeToggle = document.getElementById("themeToggle");
+        const themeIcon = document.getElementById("themeIcon");
+        const currentTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        if(currentTheme === "dark") themeIcon.className = "fa-solid fa-sun";
+
+        themeToggle.addEventListener("click", () => {
+            let theme = document.documentElement.getAttribute("data-theme");
+            let newTheme = theme === "light" ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+            themeIcon.className = newTheme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon";
+        });
+    </script>
+</body>
+</html>
